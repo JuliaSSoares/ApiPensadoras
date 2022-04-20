@@ -7,8 +7,10 @@ namespace ApiPensadoras.Context
     {
         public ApiPensadorasDbContext(DbContextOptions<ApiPensadorasDbContext> options ) : base( options )
         {}
-
+        //mapeia a entidade Pensadora para a tabela Pensadoras
         public DbSet<Pensadora>? Pensadoras { get; set; }
+
+        //mapeia a entidade Frase para a tabela Frases
         public DbSet<Frase>? Frases  { get; set; }    
     }
 }
