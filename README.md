@@ -12,4 +12,5 @@
 <li> .Net 6.0 </li>
 <li> Entity Framework Core</li>
 <li> MySql </li>
+<li> Abordagem code first </li>
 
