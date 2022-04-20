@@ -26,10 +26,15 @@ public class Pensadora
     [StringLength(80)]
     public string? Nacionalidade { get; set; }
 
-    [StringLength(300)]
+    [StringLength(600)]
     public string? Descricao { get; set; }
 
+    [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = true)]
+    [DataType(DataType.Date)]
     public DateTime DataDeNascimento { get; set; }
+
+    [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = true)]
+    [DataType(DataType.Date)]
     public DateTime? DataDeFalecimento { get; set; }
     public ICollection<Frase>? Frases { get; set; }
 }

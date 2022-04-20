@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ApiPensadoras.Migrations
 {
     [DbContext(typeof(ApiPensadorasDbContext))]
-    [Migration("20220420004149_AjusteTabelas")]
+    [Migration("20220420123618_AjusteTabelas")]
     partial class AjusteTabelas
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -29,8 +29,8 @@ namespace ApiPensadoras.Migrations
 
                     b.Property<string>("ConteudoFrase")
                         .IsRequired()
-                        .HasMaxLength(300)
-                        .HasColumnType("varchar(300)");
+                        .HasMaxLength(600)
+                        .HasColumnType("varchar(600)");
 
                     b.Property<DateTime?>("DataPublicacao")
                         .HasColumnType("datetime(6)");
@@ -58,8 +58,8 @@ namespace ApiPensadoras.Migrations
                         .HasColumnType("datetime(6)");
 
                     b.Property<string>("Descricao")
-                        .HasMaxLength(300)
-                        .HasColumnType("varchar(300)");
+                        .HasMaxLength(600)
+                        .HasColumnType("varchar(600)");
 
                     b.Property<string>("Nacionalidade")
                         .IsRequired()
