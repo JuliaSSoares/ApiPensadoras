@@ -21,7 +21,7 @@ namespace ApiPensadoras.Migrations
                 "Values('Ninguém nasce mulher: torna-se mulher.'," +
                 " 2 )");
             mb.Sql("Insert into Frases(ConteudoFrase,PensadoraId)" +
-                "Values('NHomem é a definição de ser humano e mulher é a definição de fêmea - quando ela se comporta como ser humano, ela diz que imita o homem'," +
+                "Values('Homem é a definição de ser humano e mulher é a definição de fêmea - quando ela se comporta como ser humano, ela diz que imita o homem'," +
                 " 2 )");
             mb.Sql("Insert into Frases(ConteudoFrase,PensadoraId)" +
                 "Values('Querer ser livre é também querer livres os outros'," +
@@ -103,3 +103,6 @@ namespace ApiPensadoras.Migrations
         }
     }
 }
+
+
+

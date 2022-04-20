@@ -30,9 +30,6 @@ namespace ApiPensadoras.Migrations
                         .HasMaxLength(600)
                         .HasColumnType("varchar(600)");
 
-                    b.Property<DateTime?>("DataPublicacao")
-                        .HasColumnType("datetime(6)");
-
                     b.Property<int>("PensadoraId")
                         .HasColumnType("int");
 

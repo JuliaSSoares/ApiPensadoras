@@ -10,10 +10,6 @@ public class Frase
     [Required]
     [MaxLength(600)]
     public string? ConteudoFrase { get; set; }
-
-    [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = true)]
-    [DataType(DataType.Date)]
-    public DateTime? DataPublicacao { get; set; }
     public Pensadora? Pensadora { get; set; }
     public int PensadoraId { get; set; }
 

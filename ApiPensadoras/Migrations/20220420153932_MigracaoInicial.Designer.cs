@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ApiPensadoras.Migrations
 {
     [DbContext(typeof(ApiPensadorasDbContext))]
-    [Migration("20220420123927_PopulaPensadoras")]
-    partial class PopulaPensadoras
+    [Migration("20220420153932_MigracaoInicial")]
+    partial class MigracaoInicial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -31,9 +31,6 @@ namespace ApiPensadoras.Migrations
                         .IsRequired()
                         .HasMaxLength(600)
                         .HasColumnType("varchar(600)");
-
-                    b.Property<DateTime?>("DataPublicacao")
-                        .HasColumnType("datetime(6)");
 
                     b.Property<int>("PensadoraId")
                         .HasColumnType("int");
